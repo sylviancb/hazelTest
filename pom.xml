@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.test</groupId>
 	<artifactId>hazelTest</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>hazelTest</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -34,8 +34,14 @@
 
 		<dependency>
 			<groupId>com.hazelcast</groupId>
-			<artifactId>hazelcast-all</artifactId>
+			<artifactId>hazelcast</artifactId>
 			<version>4.0.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.hazelcast</groupId>
+			<artifactId>hazelcast-kubernetes</artifactId>
+			<version>1.3</version>
 		</dependency>
 	</dependencies>
 
