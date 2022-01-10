@@ -14,7 +14,11 @@ public class CacheController {
 
     @GetMapping("/test")
     public String getCacheTest() {
-        return cacheService.getCachedString();
+        String testString = cacheService.getCachedString();
+
+        String fromPod = " - from pod" + System.getenv("HOSTNAME");
+
+        return testString + fromPod;
     }
 
 }
